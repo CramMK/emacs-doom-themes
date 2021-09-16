@@ -229,9 +229,14 @@ determine the exact padding."
    (swiper-background-match-face-2 :inherit 'swiper-background-match-face-1)
    (swiper-background-match-face-3 :inherit 'swiper-background-match-face-1)
    (swiper-background-match-face-4 :inherit 'swiper-background-match-face-1)
+   (swiper-match-face-1 :foreground common-bg :background syntax-constant)
+   (swiper-match-face-2 :foreground common-bg :background syntax-constant)
+   (swiper-match-face-3 :foreground common-bg :background syntax-constant)
+   (swiper-match-face-4 :foreground common-bg :background syntax-constant)
    ;;;; whitespaces
    (whitespace-tab :foreground (doom-lighten fg 0.4) :background common-bg)
-
+   ;;;; dashboard
+   (dashboard-footer :foreground common-fg :background common-bg)
    ))
 
 ;;; doom-ayu-light-theme.el ends here
