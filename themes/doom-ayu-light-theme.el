@@ -149,7 +149,7 @@ determine the exact padding."
    (modeline-bg-inactive-l `(,(car bg) ,@(cdr base1))))
 
   ;;;; Base theme face overrides
-  (((line-number &override) :foreground base5)
+  (((line-number &override) :foreground (doom-lighten fg 0.7))
    ((line-number-current-line &override) :foreground fg)
    ((font-lock-comment-face &override)
     :background (if doom-ayu-light-comment-bg (doom-lighten bg 0.05)))
@@ -180,6 +180,7 @@ determine the exact padding."
    (doom-modeline-buffer-file :inherit 'mode-line-buffer-id :weight 'normal)
    (doom-modeline-buffer-path :inherit 'mode-line-emphasis :weight 'normal)
    (doom-modeline-buffer-project-root :foreground green :weight 'normal)
+   (doom-modeline-panel :foreground common-fg :background common-accent)
    ;;;; elscreen
    (elscreen-tab-other-screen-face :background elscreen-bg :foreground elscreen-fg)
    ;;;; highlight-numbers
@@ -218,6 +219,19 @@ determine the exact padding."
    ;;;; web-mode
    (web-mode-html-tag-face :foreground cyan)
    (web-mode-html-tag-bracket-face :foreground (doom-lighten cyan 0.5))
-   (web-mode-html-attr-name-face :foreground syntax-func)))
+   (web-mode-html-attr-name-face :foreground syntax-func)
+   ;;;; lsp-mode
+   (lsp-face-highlight-read :foreground syntax-entity :background (doom-darken bg 0.1))
+   (lsp-face-highlight-textual :foreground syntax-entity :background (doom-darken bg 0.1))
+   ;;;; swiper
+   (swiper-line-face :foreground fg :background (doom-blend common-bg test 0.7))
+   (swiper-background-match-face-1 :foreground common-bg :background syntax-constant)
+   (swiper-background-match-face-2 :inherit 'swiper-background-match-face-1)
+   (swiper-background-match-face-3 :inherit 'swiper-background-match-face-1)
+   (swiper-background-match-face-4 :inherit 'swiper-background-match-face-1)
+   ;;;; whitespaces
+   (whitespace-tab :foreground (doom-lighten fg 0.4) :background common-bg)
+
+   ))
 
 ;;; doom-ayu-light-theme.el ends here
