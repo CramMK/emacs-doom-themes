@@ -240,6 +240,7 @@ determine the exact padding."
    (whitespace-tab :foreground (doom-lighten fg 0.4) :background common-bg)
    ;;;; dashboard
    (dashboard-footer :foreground common-fg :background common-bg)
-   ))
+   ;;;; treemacs
+   (hl-line :background ui-line)))
 
 ;;; doom-ayu-light-theme.el ends here
