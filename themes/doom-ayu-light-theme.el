@@ -241,6 +241,9 @@ determine the exact padding."
    ;;;; dashboard
    (dashboard-footer :foreground common-fg :background common-bg)
    ;;;; treemacs
-   (hl-line :background ui-line)))
+   (hl-line :background ui-line)
+   ;;;; yas
+   (yas-field-highlight-face :background (doom-lighten cyan 0.75))
+   ))
 
 ;;; doom-ayu-light-theme.el ends here
