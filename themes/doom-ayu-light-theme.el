@@ -206,6 +206,7 @@ determine the exact padding."
    (org-document-info-keyword :foreground comments)
    (org-scheduled-previously :foreground common-fg)
    (org-scheduled-today :foreground common-fg)
+   (org-meta-line :foreground (doom-lighten common-fg 0.5))
    ;;;; rjsx-mode
    (rjsx-tag :foreground cyan)
    (rjsx-tag-bracket-face :foreground (doom-lighten cyan 0.5))
