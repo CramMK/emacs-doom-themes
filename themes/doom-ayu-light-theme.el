@@ -40,7 +40,7 @@ determine the exact padding."
   (
    ;; common
    (common-accent   '("#ff9940" "orange"  "orange" ))
-   (common-bg       '("#fafafa" "black"   "black"  ))
+   (common-bg       '("#ffffff" "white"   "white"  ))
    (common-fg       '("#575f66" "grey"    "grey"   ))
    (common-ui       '("#ba9199" "grey"    "grey"   ))
    (test            '("#2ea8e6" "grey"    "grey"   ))
