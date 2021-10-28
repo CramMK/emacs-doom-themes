@@ -161,7 +161,7 @@ determine the exact padding."
     :background modeline-bg-inactive :foreground modeline-fg
     :box (if -modeline-pad `(:line-width ,-modeline-pad :color ,modeline-bg-inactive)))
    (mode-line-emphasis :foreground (if -modeline-bright base8 highlight))
-   (mode-line-highlight :foreground commong-fg :background accent)
+   (mode-line-highlight :foreground common-fg :background accent)
 
 
    ;;;; company
