@@ -246,6 +246,9 @@ determine the exact padding."
    (hl-line :background ui-line)
    ;;;; yas
    (yas-field-highlight-face :foreground common-fg :background (doom-lighten cyan 0.75))
+   ;;;; pdf-tools
+   (pdf-isearch-match :foreground common-fg :background green)
+   (pdf-isearch-lazy :foreground common-fg :background orange)
    ))
 
 ;;; doom-ayu-light-theme.el ends here
