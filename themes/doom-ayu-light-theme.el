@@ -249,6 +249,10 @@ determine the exact padding."
    ;;;; pdf-tools
    (pdf-isearch-match :foreground common-fg :background green)
    (pdf-isearch-lazy :foreground common-fg :background orange)
+   ;;;; org-super-agenda
+   (org-agenda-date-today :foreground "#6ab6ec" :background (doom-darken common-bg 0.05))
+   (org-agenda-date :foreground "#a37acc" :background (doom-darken common-bg 0.05))
+   (org-agenda-date-weekend :foreground "#b594d6" :background (doom-darken common-bg 0.05))
    ))
 
 ;;; doom-ayu-light-theme.el ends here
